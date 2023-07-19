@@ -1,0 +1,120 @@
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0
+    }
+
+.bt {
+    font-family: "Zapfino", serif;
+    font-weight: 700;
+    font-size: 5rem;
+    color: #fff;
+    border: 0.01rem solid #fff;
+    padding: 2rem 4rem;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    animation: jumping 1s linear infinite;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+@keyframes jumping {
+    from {
+        transform: translateY(-15px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-15px);
+    }
+}
+
+.bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, #d4a373, #687466, #cd8d7b, #fbc490);
+    background-size: 400%, 400%;
+    animation: cores 15s ease infinite;
+    
+}
+
+@keyframes cores {
+    0% {
+        background-position: 0%, 50%;
+    }
+
+    50% {
+        background-position: 100%, 50%;
+    }
+
+    100% {
+        background-position: 0%, 50%;
+    }
+}
+
+#conteudo {
+    height: auto;
+}
+
+.bg2 {
+    
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, #d4a373, #687466, #cd8d7b, #fbc490);
+    background-size: 400%, 400%;
+    animation: cores 15s ease infinite;
+}
+
+.text {
+    font-family: "Zapfino", sans-serif;
+    color: #000;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#imgPessoal {
+    border-radius: 80px;
+    justify-content: center;
+    box-shadow: 5px -10px 10px rgb(114, 113, 105);
+}
+.bg3{
+    text-decoration: none;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, #d4a373, #687466, #cd8d7b, #fbc490);
+    background-size: 400%, 400%;
+    animation: cores 15s ease infinite;
+    padding: 40px;
+}
+
+.carousel-imagens{
+    width: 800px;
+    text-decoration:none;
+    padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+
+    #inicio{
+        background-size: cover;
+        
+    }
+
+    
+  }
